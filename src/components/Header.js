@@ -54,15 +54,7 @@ class Header extends Component {
         <nav>
           <div className="topnav">
             { !loggedIn && signInButton }
-            { loggedIn && signOutButton }
-            
-            {/* Remove in Production */}
-            Development Version
-
-            {/* Remove in Production */}
-            <button onClick={this.props.loadEvents}>Load Samples</button>
-            <button onClick={this.props.unloadEvents}>Unload Samples</button>
-            
+            { loggedIn && signOutButton }            
           </div>
         </nav>
         <p className="hr1">LOPOL</p>
